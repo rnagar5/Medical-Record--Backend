@@ -1,0 +1,457 @@
+2025-02-21 14:30:48 [ERROR]: Signup failed - secretOrPrivateKey must have a value
+2025-02-21 14:30:48 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-21 14:30:48 [ERROR]: POST /api/auth/signup - secretOrPrivateKey must have a value
+2025-02-21 14:30:48 [INFO]: ::1 - - [21/Feb/2025:09:00:48 +0000] "POST /api/auth/signup HTTP/1.1" 400 67 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:38:18 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-21 14:38:18 [ERROR]: Signup failed - Email already registered
+2025-02-21 14:38:18 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-21 14:38:18 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-21 14:38:18 [INFO]: ::1 - - [21/Feb/2025:09:08:18 +0000] "POST /api/auth/signup HTTP/1.1" 400 55 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:49:29 [INFO]: User logged in: john.doe@example.com
+2025-02-21 14:49:29 [INFO]: ::1 - - [21/Feb/2025:09:19:29 +0000] "POST /api/auth/login HTTP/1.1" 200 263 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:50:57 [INFO]: User signed up: emily.clark@example.com
+2025-02-21 14:50:57 [INFO]: ::1 - - [21/Feb/2025:09:20:57 +0000] "POST /api/auth/signup HTTP/1.1" 201 267 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:52:18 [INFO]: User logged in: emily.clark@example.com
+2025-02-21 14:52:18 [INFO]: ::1 - - [21/Feb/2025:09:22:18 +0000] "POST /api/auth/login HTTP/1.1" 200 266 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:53:52 [INFO]: User signed up: michael.brown@example.com
+2025-02-21 14:53:52 [INFO]: ::1 - - [21/Feb/2025:09:23:52 +0000] "POST /api/auth/signup HTTP/1.1" 201 271 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:54:11 [INFO]: User logged in: michael.brown@example.com
+2025-02-21 14:54:11 [INFO]: ::1 - - [21/Feb/2025:09:24:11 +0000] "POST /api/auth/login HTTP/1.1" 200 270 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:54:35 [INFO]: User signed up: sarah.lee@example.com
+2025-02-21 14:54:35 [INFO]: ::1 - - [21/Feb/2025:09:24:35 +0000] "POST /api/auth/signup HTTP/1.1" 201 265 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:54:50 [INFO]: User logged in: sarah.lee@example.com
+2025-02-21 14:54:50 [INFO]: ::1 - - [21/Feb/2025:09:24:50 +0000] "POST /api/auth/login HTTP/1.1" 200 264 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:55:35 [INFO]: User signed up: robert.smith@example.com
+2025-02-21 14:55:35 [INFO]: ::1 - - [21/Feb/2025:09:25:35 +0000] "POST /api/auth/signup HTTP/1.1" 201 265 "-" "PostmanRuntime/7.43.0"
+2025-02-21 14:55:57 [INFO]: User logged in: robert.smith@example.com
+2025-02-21 14:55:57 [INFO]: ::1 - - [21/Feb/2025:09:25:57 +0000] "POST /api/auth/login HTTP/1.1" 200 264 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:00:21 [INFO]: Fetched all users
+2025-02-21 15:00:21 [INFO]: ::1 - - [21/Feb/2025:09:30:21 +0000] "GET /api/users HTTP/1.1" 200 795 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:01:06 [INFO]: User logged in: michael.brown@example.com
+2025-02-21 15:01:06 [INFO]: ::1 - - [21/Feb/2025:09:31:06 +0000] "POST /api/auth/login HTTP/1.1" 200 270 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:01:26 [INFO]: ::1 - - [21/Feb/2025:09:31:26 +0000] "GET /api/users HTTP/1.1" 403 27 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:09:02 [INFO]: ::1 - - [21/Feb/2025:09:39:02 +0000] "GET /api/users/1 HTTP/1.1" 401 28 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:09:31 [INFO]: Fetched user - ID: 1
+2025-02-21 15:09:31 [INFO]: ::1 - - [21/Feb/2025:09:39:31 +0000] "GET /api/users/1 HTTP/1.1" 200 151 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:10:23 [INFO]: Fetched user - ID: 2
+2025-02-21 15:10:23 [INFO]: ::1 - - [21/Feb/2025:09:40:23 +0000] "GET /api/users/2 HTTP/1.1" 200 161 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:15:04 [ERROR]: AppError - Patients can only access their own information (Status: 403)
+2025-02-21 15:15:04 [ERROR]: GET /api/users/2 - Patients can only access their own information
+2025-02-21 15:15:04 [INFO]: ::1 - - [21/Feb/2025:09:45:04 +0000] "GET /api/users/2 HTTP/1.1" 403 77 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:40:14 [INFO]: Updated user - ID: 3 by patient (ID: 3)
+2025-02-21 15:40:14 [INFO]: ::1 - - [21/Feb/2025:10:10:14 +0000] "PUT /api/users/3 HTTP/1.1" 200 240 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:40:26 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-21 15:40:26 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 3)
+2025-02-21 15:40:26 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-21 15:40:26 [ERROR]: PUT /api/users/4 - You are not authorized to update this user
+2025-02-21 15:40:26 [INFO]: ::1 - - [21/Feb/2025:10:10:26 +0000] "PUT /api/users/4 HTTP/1.1" 403 73 "-" "PostmanRuntime/7.43.0"
+2025-02-21 15:57:23 [INFO]: User logged in: robert.smith@example.com
+2025-02-21 15:57:23 [INFO]: [0mPOST /api/auth/login [32m200[0m 279.451 ms - 264[0m
+2025-02-21 15:58:32 [INFO]: Deleted user - ID: 4
+2025-02-21 15:58:32 [INFO]: [0mDELETE /api/users/4 [32m200[0m 62.793 ms - 39[0m
+2025-02-21 23:54:51 [INFO]: User signed up: liam.parker@example.com
+2025-02-21 23:54:51 [INFO]: [0mPOST /api/auth/signup [32m201[0m 264.679 ms - 269[0m
+2025-02-21 23:55:09 [INFO]: User logged in: liam.parker@example.com
+2025-02-21 23:55:09 [INFO]: [0mPOST /api/auth/login [32m200[0m 204.339 ms - 268[0m
+2025-02-22 00:00:14 [INFO]: [0mPOST /api/appointments [33m400[0m 7.318 ms - 151[0m
+2025-02-22 00:01:18 [ERROR]: AppError - Failed to create appointment: next is not a function (Status: 400)
+2025-02-22 00:01:18 [ERROR]: POST /api/appointments - Failed to create appointment: next is not a function
+2025-02-22 00:01:18 [INFO]: [0mPOST /api/appointments [33m400[0m 13.877 ms - 83[0m
+2025-02-22 00:06:42 [ERROR]: AppError - Failed to create appointment: next is not a function (Status: 400)
+2025-02-22 00:06:43 [ERROR]: POST /api/appointments - Failed to create appointment: next is not a function
+2025-02-22 00:06:43 [INFO]: [0mPOST /api/appointments [33m400[0m 45.672 ms - 83[0m
+2025-02-22 00:09:27 [ERROR]: AppError - Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:09:27 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:09:27 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined.
+2025-02-22 00:09:27 [INFO]: [0mPOST /api/appointments [33m400[0m 16.122 ms - 164[0m
+2025-02-22 00:13:23 [ERROR]: AppError - Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:13:23 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:13:23 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined.
+2025-02-22 00:13:23 [INFO]: [0mPOST /api/appointments [33m400[0m 13.639 ms - 164[0m
+2025-02-22 00:18:56 [INFO]: User logged in: liam.parker@example.com
+2025-02-22 00:18:56 [INFO]: [0mPOST /api/auth/login [32m200[0m 393.377 ms - 268[0m
+2025-02-22 00:19:24 [ERROR]: AppError - Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:19:24 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:19:24 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null
+2025-02-22 00:19:24 [INFO]: [0mPOST /api/appointments [33m400[0m 27.002 ms - 309[0m
+2025-02-22 00:23:43 [INFO]: [0mPOST /api/appointments [33m400[0m 4.935 ms - 80[0m
+2025-02-22 00:24:55 [ERROR]: AppError - Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:24:55 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:24:55 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null
+2025-02-22 00:24:55 [INFO]: [0mPOST /api/appointments [33m400[0m 8.568 ms - 309[0m
+2025-02-22 00:34:54 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:34:54 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:34:54 [INFO]: [0mPOST /api/appointments [33m400[0m 26.551 ms - 85[0m
+2025-02-22 00:38:35 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:38:35 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:38:35 [INFO]: [0mPOST /api/appointments [33m400[0m 6.381 ms - 85[0m
+2025-02-22 00:49:00 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:49:00 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:49:00 [INFO]: [0mPOST /api/appointments [33m400[0m 17.994 ms - 85[0m
+2025-02-22 00:49:06 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:49:06 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:49:06 [INFO]: [0mPOST /api/appointments [33m400[0m 7.924 ms - 85[0m
+2025-02-22 00:51:34 [INFO]: [0mGET /api/users [33m403[0m 2.784 ms - 27[0m
+2025-02-22 00:51:40 [ERROR]: AppError - Patients can only access their own information (Status: 403)
+2025-02-22 00:51:40 [ERROR]: GET /api/users/2 - Patients can only access their own information
+2025-02-22 00:51:40 [INFO]: [0mGET /api/users/2 [33m403[0m 111.500 ms - 77[0m
+2025-02-22 00:54:29 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:54:29 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:54:29 [INFO]: [0mPOST /api/appointments [33m400[0m 5.640 ms - 85[0m
+2025-02-22 00:54:38 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:54:38 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:54:38 [INFO]: [0mPOST /api/appointments [33m400[0m 4.216 ms - 85[0m
+2025-02-22 01:03:30 [INFO]: User signed up: sid@example.com
+2025-02-22 01:03:30 [INFO]: [0mPOST /api/auth/signup [32m201[0m 298.633 ms - 261[0m
+2025-02-22 01:03:55 [INFO]: User logged in: sid@example.com
+2025-02-22 01:03:55 [INFO]: [0mPOST /api/auth/login [32m200[0m 177.613 ms - 260[0m
+2025-02-22 01:09:15 [INFO]: [0mPOST /api/appointments [32m201[0m 110.413 ms - 258[0m
+2025-02-22 01:12:34 [INFO]: User signed up: rid@example.com
+2025-02-22 01:12:34 [INFO]: [0mPOST /api/auth/signup [32m201[0m 250.154 ms - 256[0m
+2025-02-22 01:12:45 [INFO]: User logged in: rid@example.com
+2025-02-22 01:12:45 [INFO]: [0mPOST /api/auth/login [32m200[0m 221.700 ms - 255[0m
+2025-02-22 01:13:06 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 01:13:06 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 01:13:06 [INFO]: [0mGET /api/appointments [31m500[0m 7.402 ms - 113[0m
+2025-02-22 10:33:37 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 10:33:37 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 10:33:37 [INFO]: [0mGET /api/appointments [31m500[0m 43.796 ms - 113[0m
+2025-02-22 10:42:54 [INFO]: User signed up: kamu@example.com
+2025-02-22 10:42:54 [INFO]: [0mPOST /api/auth/signup [32m201[0m 433.138 ms - 287[0m
+2025-02-22 10:43:10 [INFO]: User logged in: kamu@example.com
+2025-02-22 10:43:10 [INFO]: [0mPOST /api/auth/login [32m200[0m 317.419 ms - 286[0m
+2025-02-22 10:43:32 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 10:43:32 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 10:43:32 [INFO]: [0mGET /api/appointments [31m500[0m 7.538 ms - 113[0m
+2025-02-22 10:43:52 [INFO]: Fetched all users
+2025-02-22 10:43:52 [INFO]: [0mGET /api/users [32m200[0m 85.865 ms - 1251[0m
+2025-02-22 10:44:11 [INFO]: [0mGET /api/users/2 [32m200[0m 81.425 ms - 161[0m
+2025-02-22 11:02:49 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 11:02:49 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 11:02:49 [INFO]: [0mGET /api/appointments [31m500[0m 16.256 ms - 113[0m
+2025-02-22 11:03:40 [INFO]: [0mGET /api/appointments [32m200[0m 142.201 ms - 303[0m
+2025-02-22 11:06:55 [INFO]: User signed up: ram@example.com
+2025-02-22 11:06:55 [INFO]: [0mPOST /api/auth/signup [32m201[0m 401.967 ms - 289[0m
+2025-02-22 11:07:24 [INFO]: User logged in: ram@example.com
+2025-02-22 11:07:24 [INFO]: [0mPOST /api/auth/login [32m200[0m 305.845 ms - 288[0m
+2025-02-22 11:08:48 [INFO]: [0mPOST /api/appointments [32m201[0m 80.282 ms - 259[0m
+2025-02-22 11:12:09 [ERROR]: AppError - Failed to fetch appointment: Cannot destructure property 'id' of 'req.params' as it is undefined. (Status: 500)
+2025-02-22 11:12:09 [ERROR]: GET /api/appointments/2 - Failed to fetch appointment: Cannot destructure property 'id' of 'req.params' as it is undefined.
+2025-02-22 11:12:09 [INFO]: [0mGET /api/appointments/2 [31m500[0m 19.045 ms - 128[0m
+2025-02-22 11:13:53 [INFO]: [0mGET /api/appointments/2 [32m200[0m 136.494 ms - 293[0m
+2025-02-22 11:25:20 [INFO]: [0mPUT /api/appointments/2 [33m400[0m 16.167 ms - 124[0m
+2025-02-22 11:29:53 [INFO]: [0mPUT /api/appointments/2 [32m200[0m 60.457 ms - 273[0m
+2025-02-22 11:45:47 [INFO]: [0mDELETE /appointments/1 [33m404[0m 4.109 ms - 156[0m
+2025-02-22 11:47:06 [INFO]: [0mDELETE /appointments/2 [33m404[0m 0.625 ms - 156[0m
+2025-02-22 12:11:11 [INFO]: [0mDELETE /appointments/2 [33m404[0m 3.272 ms - 156[0m
+2025-02-22 12:12:37 [INFO]: User signed up: adi@example.com
+2025-02-22 12:12:37 [INFO]: [0mPOST /api/auth/signup [32m201[0m 267.511 ms - 287[0m
+2025-02-22 12:13:01 [INFO]: User logged in: adi@example.com
+2025-02-22 12:13:01 [INFO]: [0mPOST /api/auth/login [32m200[0m 212.809 ms - 286[0m
+2025-02-22 12:13:24 [INFO]: [0mDELETE /appointments/2 [33m404[0m 0.971 ms - 156[0m
+2025-02-22 12:13:29 [INFO]: [0mDELETE /appointments/2 [33m404[0m 0.736 ms - 156[0m
+2025-02-22 12:14:12 [INFO]: [0mDELETE /api/appointments/2 [32m200[0m 82.788 ms - 46[0m
+2025-02-22 12:54:57 [INFO]: User signed up: somi@example.com
+2025-02-22 12:54:57 [INFO]: [0mPOST /api/auth/signup [32m201[0m 199.346 ms - 290[0m
+2025-02-22 12:55:37 [INFO]: User signed up: amisha@example.com
+2025-02-22 12:55:37 [INFO]: [0mPOST /api/auth/signup [32m201[0m 265.168 ms - 288[0m
+2025-02-22 12:55:48 [INFO]: User logged in: somi@example.com
+2025-02-22 12:55:48 [INFO]: [0mPOST /api/auth/login [32m200[0m 145.866 ms - 289[0m
+2025-02-22 12:56:53 [INFO]: [0mPOST /api/appointments [32m201[0m 55.952 ms - 260[0m
+2025-02-22 12:57:18 [INFO]: User logged in: amisha@example.com
+2025-02-22 12:57:18 [INFO]: [0mPOST /api/auth/login [32m200[0m 146.840 ms - 287[0m
+2025-02-22 12:58:16 [INFO]: Created prescription - ID: 1
+2025-02-22 12:58:16 [INFO]: [0mPOST /api/prescriptions [32m201[0m 63.695 ms - 209[0m
+2025-02-22 13:07:42 [INFO]: User signed up: darshana@example.com
+2025-02-22 13:07:42 [INFO]: [0mPOST /api/auth/signup [32m201[0m 289.279 ms - 298[0m
+2025-02-22 13:07:56 [INFO]: User logged in: darshana@example.com
+2025-02-22 13:07:56 [INFO]: [0mPOST /api/auth/login [32m200[0m 263.190 ms - 297[0m
+2025-02-22 13:08:28 [INFO]: User signed up: manas@example.com
+2025-02-22 13:08:28 [INFO]: [0mPOST /api/auth/signup [32m201[0m 317.915 ms - 297[0m
+2025-02-22 13:08:39 [INFO]: User logged in: manas@example.com
+2025-02-22 13:08:39 [INFO]: [0mPOST /api/auth/login [32m200[0m 159.381 ms - 296[0m
+2025-02-22 13:09:24 [ERROR]: AppError - You can only create appointments for yourself. (Status: 403)
+2025-02-22 13:09:24 [ERROR]: POST /api/appointments - You can only create appointments for yourself.
+2025-02-22 13:09:24 [INFO]: [0mPOST /api/appointments [33m403[0m 6.366 ms - 77[0m
+2025-02-22 13:10:00 [INFO]: [0mPOST /api/appointments [32m201[0m 55.855 ms - 254[0m
+2025-02-22 13:10:24 [INFO]: User logged in: darshana@example.com
+2025-02-22 13:10:24 [INFO]: [0mPOST /api/auth/login [32m200[0m 135.228 ms - 297[0m
+2025-02-22 13:11:16 [INFO]: [0mPOST /api/prescriptions [32m201[0m 60.254 ms - 277[0m
+2025-02-22 14:11:52 [INFO]: User signed up: akshat@example.com
+2025-02-22 14:11:52 [INFO]: [0mPOST /api/auth/signup [32m201[0m 283.579 ms - 294[0m
+2025-02-22 14:12:14 [INFO]: User logged in: akshat@example.com
+2025-02-22 14:12:14 [INFO]: [0mPOST /api/auth/login [32m200[0m 235.963 ms - 293[0m
+2025-02-22 14:12:42 [INFO]: Fetched all prescriptions
+2025-02-22 14:12:42 [INFO]: [0mGET /api/prescriptions [32m200[0m 76.471 ms - 517[0m
+2025-02-22 14:14:18 [INFO]: Fetched prescription - ID: 1
+2025-02-22 14:14:18 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 67.661 ms - 248[0m
+2025-02-22 14:20:23 [INFO]: User logged in: akshat@example.com
+2025-02-22 14:20:23 [INFO]: [0mPOST /api/auth/login [32m200[0m 209.654 ms - 293[0m
+2025-02-22 14:21:18 [ERROR]: Error fetching prescription - Appointment is not defined
+2025-02-22 14:21:18 [ERROR]: AppError - Failed to fetch prescription: Appointment is not defined (Status: 500)
+2025-02-22 14:21:18 [ERROR]: GET /api/prescriptions/1 - Failed to fetch prescription: Appointment is not defined
+2025-02-22 14:21:18 [INFO]: [0mGET /api/prescriptions/1 [31m500[0m 20.886 ms - 87[0m
+2025-02-22 14:24:30 [INFO]: Fetched prescription with ID 1
+2025-02-22 14:24:30 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 33.134 ms - 462[0m
+2025-02-22 15:01:53 [INFO]: [0mPUT /api/prescriptions/4 [33m400[0m 4.545 ms - 129[0m
+2025-02-22 15:04:34 [ERROR]: Error updating prescription - AppError is not defined
+2025-02-22 15:04:34 [ERROR]: AppError - AppError is not defined (Status: 400)
+2025-02-22 15:04:34 [ERROR]: PUT /api/prescriptions/4 - AppError is not defined
+2025-02-22 15:04:34 [INFO]: [0mPUT /api/prescriptions/4 [33m400[0m 29.106 ms - 54[0m
+2025-02-22 15:05:30 [ERROR]: Error updating prescription - AppError is not defined
+2025-02-22 15:05:30 [ERROR]: AppError - AppError is not defined (Status: 400)
+2025-02-22 15:05:30 [ERROR]: PUT /api/prescriptions/4 - AppError is not defined
+2025-02-22 15:05:30 [INFO]: [0mPUT /api/prescriptions/4 [33m400[0m 63.325 ms - 54[0m
+2025-02-22 15:06:54 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-22 15:06:54 [ERROR]: Error updating prescription - Prescription not found
+2025-02-22 15:06:54 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-22 15:06:54 [ERROR]: PUT /api/prescriptions/4 - Prescription not found
+2025-02-22 15:06:54 [INFO]: [0mPUT /api/prescriptions/4 [33m404[0m 32.393 ms - 53[0m
+2025-02-22 15:07:03 [INFO]: Updated prescription - ID: 1
+2025-02-22 15:07:03 [INFO]: [0mPUT /api/prescriptions/1 [32m200[0m 64.016 ms - 411[0m
+2025-02-22 15:07:20 [INFO]: User logged in: manas@example.com
+2025-02-22 15:07:20 [INFO]: [0mPOST /api/auth/login [32m200[0m 321.315 ms - 296[0m
+2025-02-22 15:08:31 [INFO]: [0mPUT /api/prescriptions/2 [33m403[0m 0.977 ms - 27[0m
+2025-02-22 15:08:51 [INFO]: User logged in: darshana@example.com
+2025-02-22 15:08:51 [INFO]: [0mPOST /api/auth/login [32m200[0m 156.388 ms - 297[0m
+2025-02-22 15:09:09 [INFO]: Updated prescription - ID: 2
+2025-02-22 15:09:09 [INFO]: [0mPUT /api/prescriptions/2 [32m200[0m 63.653 ms - 416[0m
+2025-02-22 15:15:17 [INFO]: User logged in: akshat@example.com
+2025-02-22 15:15:17 [INFO]: [0mPOST /api/auth/login [32m200[0m 376.435 ms - 293[0m
+2025-02-22 15:16:12 [INFO]: Deleted prescription - ID: 2
+2025-02-22 15:16:12 [INFO]: [0mDELETE /api/prescriptions/2 [32m200[0m 86.151 ms - 47[0m
+2025-02-22 15:17:58 [INFO]: User logged in: manas@example.com
+2025-02-22 15:17:58 [INFO]: [0mPOST /api/auth/login [32m200[0m 279.839 ms - 296[0m
+2025-02-22 15:19:13 [INFO]: [0mPUT /api/users/15 [33m400[0m 4.754 ms - 157[0m
+2025-02-22 15:21:01 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 15:21:01 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 3)
+2025-02-22 15:21:01 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 15:21:01 [ERROR]: PUT /api/users/15 - You are not authorized to update this user
+2025-02-22 15:21:01 [INFO]: [0mPUT /api/users/15 [33m403[0m 26.845 ms - 73[0m
+2025-02-22 15:22:09 [INFO]: User logged in: manas@example.com
+2025-02-22 15:22:09 [INFO]: [0mPOST /api/auth/login [32m200[0m 331.465 ms - 296[0m
+2025-02-22 15:23:23 [INFO]: Updated user - ID: 15 by patient (ID: 15)
+2025-02-22 15:23:23 [INFO]: [0mPUT /api/users/15 [32m200[0m 37.972 ms - 276[0m
+2025-02-22 21:51:38 [INFO]: User signed up: rahul@example.com
+2025-02-22 21:51:38 [INFO]: [0mPOST /api/auth/signup [32m201[0m 178.322 ms - 292[0m
+2025-02-22 21:51:56 [INFO]: User logged in: rahul@example.com
+2025-02-22 21:51:56 [INFO]: [0mPOST /api/auth/login [32m200[0m 218.904 ms - 291[0m
+2025-02-22 22:23:36 [INFO]: User signed up: ravi@example.com
+2025-02-22 22:23:36 [INFO]: [0mPOST /api/auth/signup [32m201[0m 204.194 ms - 292[0m
+2025-02-22 22:24:02 [INFO]: User logged in: ravi@example.com
+2025-02-22 22:24:02 [INFO]: [0mPOST /api/auth/login [32m200[0m 265.976 ms - 291[0m
+2025-02-22 22:26:44 [INFO]: [0mPOST /api/appointments [32m201[0m 191.309 ms - 253[0m
+2025-02-22 22:27:53 [INFO]: User logged in: akshat@example.com
+2025-02-22 22:27:53 [INFO]: [0mPOST /api/auth/login [32m200[0m 169.422 ms - 293[0m
+2025-02-22 22:28:11 [INFO]: [0mGET /api/appointments [32m200[0m 177.006 ms - 1382[0m
+2025-02-22 22:29:41 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:29:41 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:29:41 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:29:41 [ERROR]: GET /api/appointments/2 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:29:41 [INFO]: [0mGET /api/appointments/2 [31m500[0m 63.830 ms - 113[0m
+2025-02-22 22:29:57 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:29:57 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:29:57 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:29:57 [ERROR]: GET /api/appointments/18 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:29:57 [INFO]: [0mGET /api/appointments/18 [31m500[0m 66.703 ms - 113[0m
+2025-02-22 22:30:18 [INFO]: [0mGET /api/appointments/ [32m200[0m 78.852 ms - 1382[0m
+2025-02-22 22:30:33 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:30:33 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:30:33 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:30:33 [ERROR]: GET /api/appointments/12 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:30:33 [INFO]: [0mGET /api/appointments/12 [31m500[0m 68.260 ms - 113[0m
+2025-02-22 22:30:40 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:30:40 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:30:40 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:30:40 [ERROR]: GET /api/appointments/12 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:30:40 [INFO]: [0mGET /api/appointments/12 [31m500[0m 18.188 ms - 113[0m
+2025-02-22 22:32:20 [INFO]: User logged in: ravi@example.com
+2025-02-22 22:32:20 [INFO]: [0mPOST /api/auth/login [32m200[0m 167.338 ms - 291[0m
+2025-02-22 22:33:04 [INFO]: [0mGET /api/appointments/5 [32m200[0m 58.078 ms - 289[0m
+2025-02-22 22:34:54 [INFO]: [0mPUT /api/appointments/5 [32m200[0m 187.370 ms - 273[0m
+2025-02-22 22:36:05 [INFO]: User logged in: akshat@example.com
+2025-02-22 22:36:05 [INFO]: [0mPOST /api/auth/login [32m200[0m 162.535 ms - 293[0m
+2025-02-22 22:36:43 [INFO]: Fetched all users
+2025-02-22 22:36:43 [INFO]: [0mGET /api/users [32m200[0m 71.301 ms - 2631[0m
+2025-02-22 22:39:49 [INFO]: [0mGET /api/users/18 [32m200[0m 56.736 ms - 152[0m
+2025-02-22 22:40:03 [INFO]: User logged in: darshana@example.com
+2025-02-22 22:40:03 [INFO]: [0mPOST /api/auth/login [32m200[0m 197.674 ms - 297[0m
+2025-02-22 22:40:22 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-22 22:40:22 [ERROR]: GET /api/users/1 - Doctors can only access patient information
+2025-02-22 22:40:22 [INFO]: [0mGET /api/users/1 [33m403[0m 64.542 ms - 74[0m
+2025-02-22 22:40:34 [INFO]: [0mGET /api/users/18 [32m200[0m 62.320 ms - 152[0m
+2025-02-22 22:40:52 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-22 22:40:52 [ERROR]: GET /api/users/14 - Doctors can only access patient information
+2025-02-22 22:40:52 [INFO]: [0mGET /api/users/14 [33m403[0m 188.152 ms - 74[0m
+2025-02-22 22:42:03 [INFO]: User logged in: ravi@example.com
+2025-02-22 22:42:03 [INFO]: [0mPOST /api/auth/login [32m200[0m 181.418 ms - 291[0m
+2025-02-22 22:42:59 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 22:42:59 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 18)
+2025-02-22 22:42:59 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 22:42:59 [ERROR]: PUT /api/users/15 - You are not authorized to update this user
+2025-02-22 22:42:59 [INFO]: [0mPUT /api/users/15 [33m403[0m 58.675 ms - 73[0m
+2025-02-22 22:43:21 [INFO]: Updated user - ID: 18 by patient (ID: 18)
+2025-02-22 22:43:21 [INFO]: [0mPUT /api/users/18 [32m200[0m 85.117 ms - 268[0m
+2025-02-22 22:46:58 [ERROR]: AppError - User not found (Status: 404)
+2025-02-22 22:46:58 [ERROR]: Login failed - User not found
+2025-02-22 22:46:58 [ERROR]: AppError - User not found (Status: 400)
+2025-02-22 22:46:58 [ERROR]: POST /api/auth/login - User not found
+2025-02-22 22:46:58 [INFO]: [0mPOST /api/auth/login [33m400[0m 617.441 ms - 45[0m
+2025-02-22 22:47:04 [ERROR]: AppError - User not found (Status: 404)
+2025-02-22 22:47:04 [ERROR]: Login failed - User not found
+2025-02-22 22:47:04 [ERROR]: AppError - User not found (Status: 400)
+2025-02-22 22:47:04 [ERROR]: POST /api/auth/login - User not found
+2025-02-22 22:47:04 [INFO]: [0mPOST /api/auth/login [33m400[0m 19.675 ms - 45[0m
+2025-02-22 22:47:18 [INFO]: User logged in: darshana@example.com
+2025-02-22 22:47:18 [INFO]: [0mPOST /api/auth/login [32m200[0m 651.970 ms - 297[0m
+2025-02-22 22:47:47 [ERROR]: AppError - Appointment not found or unauthorized (Status: 404)
+2025-02-22 22:47:47 [ERROR]: AppError - Failed to create prescription: Appointment not found or unauthorized (Status: 400)
+2025-02-22 22:47:47 [ERROR]: POST /api/prescriptions - Failed to create prescription: Appointment not found or unauthorized
+2025-02-22 22:47:47 [INFO]: [0mPOST /api/prescriptions [33m400[0m 302.621 ms - 99[0m
+2025-02-22 22:48:05 [ERROR]: AppError - Appointment not found or unauthorized (Status: 404)
+2025-02-22 22:48:05 [ERROR]: AppError - Failed to create prescription: Appointment not found or unauthorized (Status: 400)
+2025-02-22 22:48:05 [ERROR]: POST /api/prescriptions - Failed to create prescription: Appointment not found or unauthorized
+2025-02-22 22:48:05 [INFO]: [0mPOST /api/prescriptions [33m400[0m 243.683 ms - 99[0m
+2025-02-22 22:49:38 [INFO]: User signed up: priya@example.com
+2025-02-22 22:49:38 [INFO]: [0mPOST /api/auth/signup [32m201[0m 517.840 ms - 295[0m
+2025-02-22 22:49:50 [INFO]: User logged in: priya@example.com
+2025-02-22 22:49:50 [INFO]: [0mPOST /api/auth/login [32m200[0m 572.229 ms - 294[0m
+2025-02-22 22:50:39 [INFO]: User signed up: ml@example.com
+2025-02-22 22:50:39 [INFO]: [0mPOST /api/auth/signup [32m201[0m 575.175 ms - 286[0m
+2025-02-22 22:50:50 [INFO]: User logged in: ml@example.com
+2025-02-22 22:50:50 [INFO]: [0mPOST /api/auth/login [32m200[0m 293.083 ms - 285[0m
+2025-02-22 22:51:52 [INFO]: [0mPOST /api/appointments [32m201[0m 196.367 ms - 254[0m
+2025-02-22 22:52:11 [INFO]: User logged in: priya@example.com
+2025-02-22 22:52:11 [INFO]: [0mPOST /api/auth/login [32m200[0m 578.846 ms - 294[0m
+2025-02-22 22:52:42 [INFO]: [0mPOST /api/prescriptions [33m403[0m 8.627 ms - 27[0m
+2025-02-22 22:56:16 [INFO]: User logged in: priya@example.com
+2025-02-22 22:56:16 [INFO]: [0mPOST /api/auth/login [32m200[0m 1214.748 ms - 294[0m
+2025-02-22 22:57:21 [INFO]: [0mPOST /api/prescriptions [33m403[0m 2.820 ms - 27[0m
+2025-02-22 22:59:52 [INFO]: User logged in: ml@example.com
+2025-02-22 22:59:52 [INFO]: [0mPOST /api/auth/login [32m200[0m 323.414 ms - 285[0m
+2025-02-22 23:00:12 [INFO]: [0mPOST /api/prescriptions [33m403[0m 3.255 ms - 27[0m
+2025-02-22 23:00:46 [INFO]: User logged in: akshat@example.com
+2025-02-22 23:00:46 [INFO]: [0mPOST /api/auth/login [32m200[0m 315.764 ms - 293[0m
+2025-02-22 23:01:08 [INFO]: [0mGET /api/prescriptions [33m403[0m 3.291 ms - 27[0m
+2025-02-22 23:02:33 [INFO]: User signed up: priyanshu@example.com
+2025-02-22 23:02:33 [INFO]: [0mPOST /api/auth/signup [32m201[0m 207.030 ms - 299[0m
+2025-02-22 23:02:44 [INFO]: User logged in: priyanshu@example.com
+2025-02-22 23:02:44 [INFO]: [0mPOST /api/auth/login [32m200[0m 108.216 ms - 298[0m
+2025-02-22 23:03:19 [INFO]: Fetched all prescriptions
+2025-02-22 23:03:19 [INFO]: [0mGET /api/prescriptions [32m200[0m 90.256 ms - 238[0m
+2025-02-22 23:03:52 [INFO]: Fetched prescription with ID 1
+2025-02-22 23:03:52 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 93.654 ms - 450[0m
+2025-02-22 23:05:15 [INFO]: Updated prescription - ID: 1
+2025-02-22 23:05:15 [INFO]: [0mPUT /api/prescriptions/1 [32m200[0m 100.148 ms - 411[0m
+2025-02-22 23:05:54 [INFO]: [0mPOST /api/prescriptions [33m403[0m 4.548 ms - 27[0m
+2025-02-22 23:06:31 [INFO]: User signed up: sita@example.com
+2025-02-22 23:06:31 [INFO]: [0mPOST /api/auth/signup [32m201[0m 199.623 ms - 291[0m
+2025-02-22 23:07:01 [INFO]: User signed up: radha@example.com
+2025-02-22 23:07:01 [INFO]: [0mPOST /api/auth/signup [32m201[0m 201.942 ms - 290[0m
+2025-02-22 23:07:14 [INFO]: User logged in: sita@example.com
+2025-02-22 23:07:14 [INFO]: [0mPOST /api/auth/login [32m200[0m 195.458 ms - 290[0m
+2025-02-22 23:08:19 [INFO]: [0mPOST /api/appointments [32m201[0m 80.433 ms - 267[0m
+2025-02-22 23:08:40 [INFO]: User logged in: radha@example.com
+2025-02-22 23:08:40 [INFO]: [0mPOST /api/auth/login [32m200[0m 193.334 ms - 289[0m
+2025-02-22 23:09:08 [INFO]: [0mPOST /api/prescriptions [32m201[0m 107.808 ms - 263[0m
+2025-02-24 09:36:23 [INFO]: [0mPOST /api/prescriptions [32m201[0m 100.551 ms - 263[0m
+2025-02-24 09:36:36 [INFO]: Fetched all prescriptions
+2025-02-24 09:36:36 [INFO]: [0mGET /api/prescriptions [32m200[0m 68.640 ms - 736[0m
+2025-02-24 09:36:42 [INFO]: Fetched prescription with ID 1
+2025-02-24 09:36:42 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 12.432 ms - 450[0m
+2025-02-24 09:36:49 [INFO]: Updated prescription - ID: 1
+2025-02-24 09:36:49 [INFO]: [0mPUT /api/prescriptions/1 [32m200[0m 7.006 ms - 411[0m
+2025-02-24 09:37:03 [WARN]: Delete failed - Prescription not found: ID 2
+2025-02-24 09:37:03 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-24 09:37:03 [ERROR]: DELETE /api/prescriptions/2 - Prescription not found
+2025-02-24 09:37:03 [INFO]: [0mDELETE /api/prescriptions/2 [33m404[0m 51.283 ms - 53[0m
+2025-02-24 09:37:16 [INFO]: [0mPOST /api/appointments [32m201[0m 61.277 ms - 267[0m
+2025-02-24 09:37:45 [INFO]: [0mGET /api/appointments [32m200[0m 54.453 ms - 3016[0m
+2025-02-24 09:38:00 [INFO]: [0mGET /api/appointments/5 [32m200[0m 57.306 ms - 304[0m
+2025-02-24 09:38:07 [INFO]: [0mPUT /api/appointments/5 [32m200[0m 4.579 ms - 273[0m
+2025-02-24 09:38:23 [INFO]: Fetched all users
+2025-02-24 09:38:23 [INFO]: [0mGET /api/users [32m200[0m 55.185 ms - 3394[0m
+2025-02-24 09:38:44 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-24 09:38:44 [ERROR]: GET /api/users/14 - Doctors can only access patient information
+2025-02-24 09:38:44 [INFO]: [0mGET /api/users/14 [33m403[0m 52.223 ms - 74[0m
+2025-02-24 09:38:49 [INFO]: Updated user - ID: 18 by patient (ID: 18)
+2025-02-24 09:38:49 [INFO]: [0mPUT /api/users/18 [32m200[0m 5.332 ms - 268[0m
+2025-02-24 09:39:20 [INFO]: User signed up: ritu@example.com
+2025-02-24 09:39:20 [INFO]: [0mPOST /api/auth/signup [32m201[0m 185.847 ms - 286[0m
+2025-02-24 09:39:32 [INFO]: User logged in: ritu@example.com
+2025-02-24 09:39:32 [INFO]: [0mPOST /api/auth/login [32m200[0m 150.849 ms - 285[0m
+2025-02-24 09:39:42 [ERROR]: AppError - User not found (Status: 404)
+2025-02-24 09:39:42 [ERROR]: Error deleting user - User not found
+2025-02-24 09:39:42 [ERROR]: AppError - Failed to delete user (Status: 400)
+2025-02-24 09:39:42 [ERROR]: DELETE /api/users/4 - Failed to delete user
+2025-02-24 09:39:42 [INFO]: [0mDELETE /api/users/4 [33m400[0m 158.437 ms - 52[0m
+2025-02-24 09:40:33 [INFO]: [0mGET /api/users/24 [32m200[0m 158.943 ms - 147[0m
+2025-02-24 14:56:13 [INFO]: User logged in: akshat@example.com
+2025-02-24 14:56:13 [INFO]: [0mPOST /api/auth/login [32m200[0m 248.799 ms - 293[0m
+2025-02-24 14:56:32 [INFO]: Fetched users with limit=10 and offset=0
+2025-02-24 14:56:32 [INFO]: [0mGET /api/users [32m200[0m 190.102 ms - 1551[0m
+2025-02-24 14:57:43 [INFO]: Fetched users with limit=15 and offset=0
+2025-02-24 14:57:43 [INFO]: [0mGET /api/users?limit=15&offset=0 [32m200[0m 156.938 ms - 2324[0m
+2025-02-24 14:58:25 [INFO]: Fetched users with limit=15 and offset=5
+2025-02-24 14:58:25 [INFO]: [0mGET /api/users?limit=15&offset=5 [32m200[0m 164.682 ms - 2293[0m
+2025-02-24 14:58:55 [INFO]: [0mGET /api/appointments [32m200[0m 180.478 ms - 3016[0m
+2025-02-24 14:59:15 [INFO]: [0mGET /api/appointments?limit=2 [32m200[0m 51.763 ms - 792[0m
+2025-02-24 14:59:38 [INFO]: Fetched all prescriptions
+2025-02-24 14:59:38 [INFO]: [0mGET /api/prescriptions [32m200[0m 169.999 ms - 736[0m
+2025-02-24 15:00:00 [INFO]: Fetched all prescriptions
+2025-02-24 15:00:00 [INFO]: [0mGET /api/prescriptions?limit=2&offset=1 [32m200[0m 156.510 ms - 499[0m
+2025-02-24 15:53:13 [INFO]: User signed up: nobita@example.com
+2025-02-24 15:53:13 [INFO]: [0mPOST /api/auth/signup [32m201[0m 401.745 ms - 292[0m
+2025-02-24 15:53:49 [INFO]: User signed up: suzuka@example.com
+2025-02-24 15:53:49 [INFO]: [0mPOST /api/auth/signup [32m201[0m 330.924 ms - 288[0m
+2025-02-24 15:54:01 [INFO]: User logged in: suzuka@example.com
+2025-02-24 15:54:01 [INFO]: [0mPOST /api/auth/login [32m200[0m 401.984 ms - 287[0m
+2025-02-24 15:55:14 [ERROR]: POST /api/appointments - sequelize is not defined
+2025-02-24 15:55:14 [INFO]: [0mPOST /api/appointments [31m500[0m 11.673 ms - 55[0m
+2025-02-24 15:56:43 [INFO]: [0mPOST /api/appointments [32m201[0m 25.970 ms - 267[0m
+2025-02-24 15:57:32 [INFO]: [0mPUT /api/appointments/9 [32m200[0m 121.219 ms - 274[0m
+2025-02-24 15:58:01 [INFO]: User logged in: akshat@example.com
+2025-02-24 15:58:01 [INFO]: [0mPOST /api/auth/login [32m200[0m 355.062 ms - 293[0m
+2025-02-24 15:58:20 [INFO]: [0mDELETE /api/appointments/9 [32m200[0m 87.153 ms - 46[0m
+2025-02-24 15:58:50 [INFO]: User logged in: suzuka@example.com
+2025-02-24 15:58:50 [INFO]: [0mPOST /api/auth/login [32m200[0m 383.736 ms - 287[0m
+2025-02-24 15:59:25 [INFO]: Updated user - ID: 26 by patient (ID: 26)
+2025-02-24 15:59:25 [INFO]: [0mPUT /api/users/26 [32m200[0m 100.556 ms - 272[0m
+2025-02-24 15:59:52 [INFO]: User logged in: akshat@example.com
+2025-02-24 15:59:52 [INFO]: [0mPOST /api/auth/login [32m200[0m 388.159 ms - 293[0m
+2025-02-24 16:00:12 [INFO]: Deleted user - ID: 26
+2025-02-24 16:00:12 [INFO]: [0mDELETE /api/users/26 [32m200[0m 91.029 ms - 39[0m
+2025-02-24 16:03:02 [INFO]: User signed up: rohit@example.com
+2025-02-24 16:03:02 [INFO]: [0mPOST /api/auth/signup [32m201[0m 313.692 ms - 292[0m
+2025-02-24 16:03:37 [INFO]: User signed up: arijit@example.com
+2025-02-24 16:03:37 [INFO]: [0mPOST /api/auth/signup [32m201[0m 315.980 ms - 296[0m
+2025-02-24 16:03:53 [INFO]: User logged in: arijit@example.com
+2025-02-24 16:03:53 [INFO]: [0mPOST /api/auth/login [32m200[0m 314.809 ms - 295[0m
+2025-02-24 16:04:35 [INFO]: [0mPOST /api/appointments [32m201[0m 79.263 ms - 260[0m
+2025-02-24 16:05:10 [INFO]: User logged in: rohit@example.com
+2025-02-24 16:05:10 [INFO]: [0mPOST /api/auth/login [32m200[0m 380.028 ms - 291[0m
+2025-02-24 16:05:33 [INFO]: [0mPOST /api/prescriptions [32m201[0m 93.735 ms - 265[0m
+2025-02-24 16:06:26 [INFO]: Updated prescription - ID: 5
+2025-02-24 16:06:26 [INFO]: [0mPUT /api/prescriptions/5 [32m200[0m 197.246 ms - 424[0m
+2025-02-24 16:07:01 [INFO]: User logged in: akshat@example.com
+2025-02-24 16:07:01 [INFO]: [0mPOST /api/auth/login [32m200[0m 326.131 ms - 293[0m
+2025-02-24 16:07:23 [INFO]: Deleted prescription - ID: 5
+2025-02-24 16:07:23 [INFO]: [0mDELETE /api/prescriptions/5 [32m200[0m 84.611 ms - 47[0m

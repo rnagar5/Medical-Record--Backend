@@ -1,0 +1,137 @@
+2025-02-21 14:30:48 [ERROR]: Signup failed - secretOrPrivateKey must have a value
+2025-02-21 14:30:48 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-21 14:30:48 [ERROR]: POST /api/auth/signup - secretOrPrivateKey must have a value
+2025-02-21 14:38:18 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-21 14:38:18 [ERROR]: Signup failed - Email already registered
+2025-02-21 14:38:18 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-21 14:38:18 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-21 15:15:04 [ERROR]: AppError - Patients can only access their own information (Status: 403)
+2025-02-21 15:15:04 [ERROR]: GET /api/users/2 - Patients can only access their own information
+2025-02-21 15:40:26 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-21 15:40:26 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 3)
+2025-02-21 15:40:26 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-21 15:40:26 [ERROR]: PUT /api/users/4 - You are not authorized to update this user
+2025-02-22 00:01:18 [ERROR]: AppError - Failed to create appointment: next is not a function (Status: 400)
+2025-02-22 00:01:18 [ERROR]: POST /api/appointments - Failed to create appointment: next is not a function
+2025-02-22 00:06:42 [ERROR]: AppError - Failed to create appointment: next is not a function (Status: 400)
+2025-02-22 00:06:43 [ERROR]: POST /api/appointments - Failed to create appointment: next is not a function
+2025-02-22 00:09:27 [ERROR]: AppError - Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:09:27 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:09:27 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined.
+2025-02-22 00:13:23 [ERROR]: AppError - Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:13:23 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined. (Status: 400)
+2025-02-22 00:13:23 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: Cannot destructure property 'patientId' of 'req.body' as it is undefined.
+2025-02-22 00:19:24 [ERROR]: AppError - Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:19:24 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:19:24 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null
+2025-02-22 00:24:55 [ERROR]: AppError - Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:24:55 [ERROR]: AppError - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null (Status: 400)
+2025-02-22 00:24:55 [ERROR]: POST /api/appointments - Failed to create appointment: Failed to create appointment: notNull Violation: Appointment.patientId cannot be null,
+notNull Violation: Appointment.doctorId cannot be null,
+notNull Violation: Appointment.date cannot be null,
+notNull Violation: Appointment.time cannot be null
+2025-02-22 00:34:54 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:34:54 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:38:35 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:38:35 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:49:00 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:49:00 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:49:06 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:49:06 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:51:40 [ERROR]: AppError - Patients can only access their own information (Status: 403)
+2025-02-22 00:51:40 [ERROR]: GET /api/users/2 - Patients can only access their own information
+2025-02-22 00:54:29 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:54:29 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 00:54:38 [ERROR]: AppError - Failed to create appointment: patientId is not defined (Status: 400)
+2025-02-22 00:54:38 [ERROR]: POST /api/appointments - Failed to create appointment: patientId is not defined
+2025-02-22 01:13:06 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 01:13:06 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 10:33:37 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 10:33:37 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 10:43:32 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 10:43:32 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 11:02:49 [ERROR]: AppError - Failed to fetch appointments: Cannot read properties of undefined (reading 'user') (Status: 500)
+2025-02-22 11:02:49 [ERROR]: GET /api/appointments - Failed to fetch appointments: Cannot read properties of undefined (reading 'user')
+2025-02-22 11:12:09 [ERROR]: AppError - Failed to fetch appointment: Cannot destructure property 'id' of 'req.params' as it is undefined. (Status: 500)
+2025-02-22 11:12:09 [ERROR]: GET /api/appointments/2 - Failed to fetch appointment: Cannot destructure property 'id' of 'req.params' as it is undefined.
+2025-02-22 13:09:24 [ERROR]: AppError - You can only create appointments for yourself. (Status: 403)
+2025-02-22 13:09:24 [ERROR]: POST /api/appointments - You can only create appointments for yourself.
+2025-02-22 14:21:18 [ERROR]: Error fetching prescription - Appointment is not defined
+2025-02-22 14:21:18 [ERROR]: AppError - Failed to fetch prescription: Appointment is not defined (Status: 500)
+2025-02-22 14:21:18 [ERROR]: GET /api/prescriptions/1 - Failed to fetch prescription: Appointment is not defined
+2025-02-22 15:04:34 [ERROR]: Error updating prescription - AppError is not defined
+2025-02-22 15:04:34 [ERROR]: AppError - AppError is not defined (Status: 400)
+2025-02-22 15:04:34 [ERROR]: PUT /api/prescriptions/4 - AppError is not defined
+2025-02-22 15:05:30 [ERROR]: Error updating prescription - AppError is not defined
+2025-02-22 15:05:30 [ERROR]: AppError - AppError is not defined (Status: 400)
+2025-02-22 15:05:30 [ERROR]: PUT /api/prescriptions/4 - AppError is not defined
+2025-02-22 15:06:54 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-22 15:06:54 [ERROR]: Error updating prescription - Prescription not found
+2025-02-22 15:06:54 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-22 15:06:54 [ERROR]: PUT /api/prescriptions/4 - Prescription not found
+2025-02-22 15:21:01 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 15:21:01 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 3)
+2025-02-22 15:21:01 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 15:21:01 [ERROR]: PUT /api/users/15 - You are not authorized to update this user
+2025-02-22 22:29:41 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:29:41 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:29:41 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:29:41 [ERROR]: GET /api/appointments/2 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:29:57 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:29:57 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:29:57 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:29:57 [ERROR]: GET /api/appointments/18 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:30:33 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:30:33 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:30:33 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:30:33 [ERROR]: GET /api/appointments/12 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:30:40 [ERROR]: AppError - Appointment not found (Status: 404)
+2025-02-22 22:30:40 [ERROR]: AppError - Failed to retrieve appointment: Appointment not found (Status: 400)
+2025-02-22 22:30:40 [ERROR]: AppError - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found (Status: 500)
+2025-02-22 22:30:40 [ERROR]: GET /api/appointments/12 - Failed to fetch appointment: Failed to retrieve appointment: Appointment not found
+2025-02-22 22:40:22 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-22 22:40:22 [ERROR]: GET /api/users/1 - Doctors can only access patient information
+2025-02-22 22:40:52 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-22 22:40:52 [ERROR]: GET /api/users/14 - Doctors can only access patient information
+2025-02-22 22:42:59 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 22:42:59 [ERROR]: Error updating user - You are not authorized to update this user | Requested by patient (ID: 18)
+2025-02-22 22:42:59 [ERROR]: AppError - You are not authorized to update this user (Status: 403)
+2025-02-22 22:42:59 [ERROR]: PUT /api/users/15 - You are not authorized to update this user
+2025-02-22 22:46:58 [ERROR]: AppError - User not found (Status: 404)
+2025-02-22 22:46:58 [ERROR]: Login failed - User not found
+2025-02-22 22:46:58 [ERROR]: AppError - User not found (Status: 400)
+2025-02-22 22:46:58 [ERROR]: POST /api/auth/login - User not found
+2025-02-22 22:47:04 [ERROR]: AppError - User not found (Status: 404)
+2025-02-22 22:47:04 [ERROR]: Login failed - User not found
+2025-02-22 22:47:04 [ERROR]: AppError - User not found (Status: 400)
+2025-02-22 22:47:04 [ERROR]: POST /api/auth/login - User not found
+2025-02-22 22:47:47 [ERROR]: AppError - Appointment not found or unauthorized (Status: 404)
+2025-02-22 22:47:47 [ERROR]: AppError - Failed to create prescription: Appointment not found or unauthorized (Status: 400)
+2025-02-22 22:47:47 [ERROR]: POST /api/prescriptions - Failed to create prescription: Appointment not found or unauthorized
+2025-02-22 22:48:05 [ERROR]: AppError - Appointment not found or unauthorized (Status: 404)
+2025-02-22 22:48:05 [ERROR]: AppError - Failed to create prescription: Appointment not found or unauthorized (Status: 400)
+2025-02-22 22:48:05 [ERROR]: POST /api/prescriptions - Failed to create prescription: Appointment not found or unauthorized
+2025-02-24 09:37:03 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-24 09:37:03 [ERROR]: DELETE /api/prescriptions/2 - Prescription not found
+2025-02-24 09:38:44 [ERROR]: AppError - Doctors can only access patient information (Status: 403)
+2025-02-24 09:38:44 [ERROR]: GET /api/users/14 - Doctors can only access patient information
+2025-02-24 09:39:42 [ERROR]: AppError - User not found (Status: 404)
+2025-02-24 09:39:42 [ERROR]: Error deleting user - User not found
+2025-02-24 09:39:42 [ERROR]: AppError - Failed to delete user (Status: 400)
+2025-02-24 09:39:42 [ERROR]: DELETE /api/users/4 - Failed to delete user
+2025-02-24 15:55:14 [ERROR]: POST /api/appointments - sequelize is not defined
