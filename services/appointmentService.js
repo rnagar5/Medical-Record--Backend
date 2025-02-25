@@ -7,7 +7,7 @@ const appointmentService = {
     try {
       const appointment = await Appointment.create(
         {
-          patientId: user.id, // Extracted from the token
+          patientId: user.id, 
           doctorId,
           date,
           time,
@@ -24,24 +24,6 @@ const appointmentService = {
     }
   },
   
-
-  // createAppointment: async ({ patientId, doctorId, date, time, notes }) => {
-  //   const transaction = await sequelize.transaction();
-  //   try {
-  //     const appointment = await Appointment.create(
-  //       { patientId, doctorId, date, time, notes },
-  //       { transaction }
-  //     );
-
-  //     await transaction.commit(); //commit krdo
-  //     return appointment;
-
-  //   } catch (error) {
-  //     await transaction.rollback(); //rollback hojayega
-  //     throw new AppError(`Failed to create appointment: ${error.message}`, 400);
-  //   }
-  // },
-
 
 
   // Get all appointments (Admin only)
