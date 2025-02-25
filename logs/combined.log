@@ -455,3 +455,28 @@ notNull Violation: Appointment.time cannot be null
 2025-02-24 16:07:01 [INFO]: [0mPOST /api/auth/login [32m200[0m 326.131 ms - 293[0m
 2025-02-24 16:07:23 [INFO]: Deleted prescription - ID: 5
 2025-02-24 16:07:23 [INFO]: [0mDELETE /api/prescriptions/5 [32m200[0m 84.611 ms - 47[0m
+2025-02-25 15:17:26 [INFO]: User logged in: arijit@example.com
+2025-02-25 15:17:26 [INFO]: [0mPOST /api/auth/login [32m200[0m 110.885 ms - 295[0m
+2025-02-25 16:04:25 [INFO]: [0mPOST /api/appointments [33m400[0m 5.068 ms - 83[0m
+2025-02-25 16:05:42 [INFO]: [0mPOST /api/appointments [32m201[0m 35.031 ms - 260[0m
+2025-02-25 16:06:22 [INFO]: User logged in: rohit@example.com
+2025-02-25 16:06:22 [INFO]: [0mPOST /api/auth/login [32m200[0m 193.675 ms - 291[0m
+2025-02-25 16:06:44 [INFO]: [0mPOST /api/appointments [33m403[0m 2.118 ms - 27[0m
+2025-02-25 16:38:25 [INFO]: [0mPOST /api/prescriptions [32m201[0m 69.213 ms - 265[0m
+2025-02-25 16:39:03 [INFO]: User logged in: akshat@example.com
+2025-02-25 16:39:03 [INFO]: [0mPOST /api/auth/login [32m200[0m 123.354 ms - 293[0m
+2025-02-25 16:39:14 [INFO]: User logged in: arijit@example.com
+2025-02-25 16:39:14 [INFO]: [0mPOST /api/auth/login [32m200[0m 121.275 ms - 295[0m
+2025-02-25 16:40:06 [INFO]: [0mPOST /api/prescriptions [33m403[0m 1.196 ms - 27[0m
+2025-02-25 16:41:29 [INFO]: User signed up: shreya@example.com
+2025-02-25 16:41:29 [INFO]: [0mPOST /api/auth/signup [32m201[0m 302.036 ms - 296[0m
+2025-02-25 16:41:56 [INFO]: User signed up: sonu@example.com
+2025-02-25 16:41:56 [INFO]: [0mPOST /api/auth/signup [32m201[0m 250.345 ms - 291[0m
+2025-02-25 16:42:06 [INFO]: User logged in: sonu@example.com
+2025-02-25 16:42:06 [INFO]: [0mPOST /api/auth/login [32m200[0m 121.772 ms - 290[0m
+2025-02-25 16:42:50 [INFO]: [0mPOST /api/appointments [32m201[0m 173.688 ms - 260[0m
+2025-02-25 16:43:21 [INFO]: [0mPOST /api/prescriptions [33m403[0m 2.622 ms - 27[0m
+2025-02-25 16:43:41 [INFO]: [0mPOST /api/prescriptions [33m403[0m 2.299 ms - 27[0m
+2025-02-25 16:43:45 [INFO]: User logged in: shreya@example.com
+2025-02-25 16:43:45 [INFO]: [0mPOST /api/auth/login [32m200[0m 140.557 ms - 295[0m
+2025-02-25 16:44:10 [INFO]: [0mPOST /api/prescriptions [32m201[0m 64.442 ms - 265[0m

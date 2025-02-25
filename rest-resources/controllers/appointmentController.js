@@ -4,20 +4,30 @@ const AppError = require('../../errors/AppError');
 
 const appointmentController = {
   // Create an appointment
+
   createAppointment: async (req, res, next) => {
     try {
-      const { patientId, doctorId, date, time, notes } = req.body;
-  
-      if (req.user.role === 'patient' && req.user.id !== patientId) {
-        throw new AppError('You can only create appointments for yourself.', 403);
-      }
-  
-      const appointment = await appointmentService.createAppointment({ patientId, doctorId, date, time, notes });
+      const appointment = await appointmentService.createAppointment(req.body, req.user);
       res.status(201).json({ message: 'Appointment created successfully', appointment });
     } catch (error) {
       next(error);
     }
   },
+  
+  // createAppointment: async (req, res, next) => {
+  //   try {
+  //     const { patientId, doctorId, date, time, notes } = req.body;
+  
+  //     if (req.user.role === 'patient' && req.user.id !== patientId) {
+  //       throw new AppError('You can only create appointments for yourself.', 403);
+  //     }
+  
+  //     const appointment = await appointmentService.createAppointment({ patientId, doctorId, date, time, notes });
+  //     res.status(201).json({ message: 'Appointment created successfully', appointment });
+  //   } catch (error) {
+  //     next(error);
+  //   }
+  // },
   
   // Get all appointments (Admin only)
   getAllAppointments: async (req, res, next) => {

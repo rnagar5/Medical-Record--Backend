@@ -2,22 +2,45 @@ const { Appointment, User, Prescription,sequelize } = require('../database/model
 const AppError = require('../errors/AppError');
 
 const appointmentService = {
-  createAppointment: async ({ patientId, doctorId, date, time, notes }) => {
+  createAppointment: async ({ doctorId, date, time, notes }, user) => {
     const transaction = await sequelize.transaction();
     try {
       const appointment = await Appointment.create(
-        { patientId, doctorId, date, time, notes },
+        {
+          patientId: user.id, // Extracted from the token
+          doctorId,
+          date,
+          time,
+          notes,
+        },
         { transaction }
       );
-
-      await transaction.commit(); //commit krdo
+  
+      await transaction.commit();
       return appointment;
-
     } catch (error) {
-      await transaction.rollback(); //rollback hojayega
+      await transaction.rollback();
       throw new AppError(`Failed to create appointment: ${error.message}`, 400);
     }
   },
+  
+
+  // createAppointment: async ({ patientId, doctorId, date, time, notes }) => {
+  //   const transaction = await sequelize.transaction();
+  //   try {
+  //     const appointment = await Appointment.create(
+  //       { patientId, doctorId, date, time, notes },
+  //       { transaction }
+  //     );
+
+  //     await transaction.commit(); //commit krdo
+  //     return appointment;
+
+  //   } catch (error) {
+  //     await transaction.rollback(); //rollback hojayega
+  //     throw new AppError(`Failed to create appointment: ${error.message}`, 400);
+  //   }
+  // },
 
 
 

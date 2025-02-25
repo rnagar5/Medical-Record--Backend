@@ -1,7 +1,6 @@
 const appointmentUpdateSchema = {
     type: 'object',
     properties: {
-      patientId: { type: 'integer' },
       doctorId: { type: 'integer' },
       date: { type: 'string', format: 'date-time' },
       time: { type: 'string', pattern: '^([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)$' },

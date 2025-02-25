@@ -2,44 +2,44 @@ const { Prescription,Appointment, User ,sequelize} = require('../database/models
 const AppError = require('../errors/AppError');
 
 const prescriptionService = {
-
-  createPrescription: async (data, doctorId) => {
+  createPrescription: async (data, user) => {
+    const { id: doctorId } = user;
+  
     const transaction = await sequelize.transaction();
     try {
       const { appointmentId, patientId, medication, dosage, instructions } = data;
-
+  
       const appointment = await Appointment.findOne({
         where: { id: appointmentId, doctorId },
         transaction,
       });
       if (!appointment) {
-        await transaction.rollback();
         throw new AppError('Appointment not found or unauthorized', 404);
       }
-
+  
       const patient = await User.findOne({
         where: { id: patientId, role: 'patient' },
         transaction,
       });
       if (!patient) {
-        await transaction.rollback();
         throw new AppError('Patient not found', 404);
       }
-
+  
       const prescription = await Prescription.create(
         { appointmentId, patientId, medication, dosage, instructions },
         { transaction }
       );
-
-      await transaction.commit(); 
+  
+      await transaction.commit();
       return prescription;
-
+  
     } catch (error) {
-      await transaction.rollback(); 
+      await transaction.rollback();
       throw new AppError(`Failed to create prescription: ${error.message}`, 400);
     }
   },
- 
+  
+
 
   getAllPrescriptions: async (limit, offset) => {
     try {

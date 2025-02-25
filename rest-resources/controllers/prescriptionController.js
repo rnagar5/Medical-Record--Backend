@@ -6,15 +6,8 @@ const logger = require('../../libs/logger');
 const prescriptionController = {
   createPrescription: async (req, res, next) => {
     try {
-      const { role, id: doctorId } = req.user;
-
-      // authenticated user ek dr. hai
-      if (role !== 'doctor') {
-        return next(new AppError('Access denied. Doctors only.', 403));
-      }
-
-      const prescription = await prescriptionService.createPrescription(req.body, doctorId);
-
+      const prescription = await prescriptionService.createPrescription(req.body, req.user); 
+  
       res.status(201).json({
         message: 'Prescription created successfully',
         data: prescription,
@@ -23,6 +16,7 @@ const prescriptionController = {
       next(new AppError(`Failed to create prescription: ${error.message}`, 400));
     }
   },
+  
   getAllPrescriptions: async (req, res, next) => {
     try {
       const limit = parseInt(req.query.limit) || 10; 
