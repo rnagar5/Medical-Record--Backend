@@ -588,3 +588,61 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not defined (Status: 500)
 2025-02-27 18:55:41 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not defined
 2025-02-27 18:55:41 [INFO]: [0mGET /api/appointments [31m500[0m 15.660 ms - 110[0m
+2025-02-27 19:04:26 [INFO]: [0mGET /api/appointments [32m200[0m 185.808 ms - 3828[0m
+2025-02-27 19:04:42 [INFO]: [0mGET /api/appointments/13 [32m200[0m 89.175 ms - 510[0m
+2025-02-27 19:04:58 [INFO]: [0mPUT /api/appointments/13 [32m200[0m 113.969 ms - 275[0m
+2025-02-27 19:07:33 [ERROR]: AppError - Invalid credentials (Status: 401)
+2025-02-27 19:07:33 [ERROR]: Login failed - Invalid credentials
+2025-02-27 19:07:33 [ERROR]: AppError - Invalid credentials (Status: 400)
+2025-02-27 19:07:33 [ERROR]: POST /api/auth/login - Invalid credentials
+2025-02-27 19:07:33 [INFO]: [0mPOST /api/auth/login [33m400[0m 242.197 ms - 50[0m
+2025-02-27 19:09:15 [INFO]: User logged in: akshat@example.com
+2025-02-27 19:09:15 [INFO]: [0mPOST /api/auth/login [32m200[0m 221.147 ms - 293[0m
+2025-02-27 19:09:29 [INFO]: [0mGET /api/appointments/12 [32m200[0m 89.773 ms - 508[0m
+2025-02-27 19:10:07 [INFO]: User logged in: shreya@example.com
+2025-02-27 19:10:07 [INFO]: [0mPOST /api/auth/login [32m200[0m 230.932 ms - 295[0m
+2025-02-27 19:10:46 [INFO]: [0mPOST /api/prescriptions [32m201[0m 233.403 ms - 265[0m
+2025-02-27 19:11:36 [INFO]: User logged in: akshat@example.com
+2025-02-27 19:11:36 [INFO]: [0mPOST /api/auth/login [32m200[0m 175.284 ms - 293[0m
+2025-02-27 19:12:01 [INFO]: Fetched prescription with ID 1
+2025-02-27 19:12:01 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 90.509 ms - 450[0m
+2025-02-27 19:12:11 [INFO]: Fetched all prescriptions
+2025-02-27 19:12:11 [INFO]: [0mGET /api/prescriptions [32m200[0m 25.698 ms - 1744[0m
+2025-02-27 19:13:24 [INFO]: User logged in: shreya@example.com
+2025-02-27 19:13:24 [INFO]: [0mPOST /api/auth/login [32m200[0m 167.898 ms - 295[0m
+2025-02-27 19:14:04 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:14:04 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:14:04 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:14:04 [ERROR]: PUT /api/prescriptions/12 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:14:04 [INFO]: [0mPUT /api/prescriptions/12 [33m400[0m 85.899 ms - 114[0m
+2025-02-27 19:16:05 [INFO]: User logged in: rohit@example.com
+2025-02-27 19:16:05 [INFO]: [0mPOST /api/auth/login [32m200[0m 337.731 ms - 291[0m
+2025-02-27 19:16:34 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:16:34 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:16:34 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:16:34 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:16:34 [INFO]: [0mPUT /api/prescriptions/11 [33m400[0m 209.464 ms - 114[0m
+2025-02-27 19:18:04 [INFO]: User logged in: akshat@example.com
+2025-02-27 19:18:04 [INFO]: [0mPOST /api/auth/login [32m200[0m 184.716 ms - 293[0m
+2025-02-27 19:18:19 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:18:19 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:18:19 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:18:19 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:18:19 [INFO]: [0mPUT /api/prescriptions/11 [33m400[0m 85.632 ms - 114[0m
+2025-02-27 19:37:11 [INFO]: User signed up: preeti@example.com
+2025-02-27 19:37:11 [INFO]: [0mPOST /api/auth/signup [32m201[0m 291.536 ms - 93[0m
+2025-02-27 19:37:35 [INFO]: User signed up: abhishek@example.com
+2025-02-27 19:37:35 [INFO]: [0mPOST /api/auth/signup [32m201[0m 224.348 ms - 96[0m
+2025-02-27 19:37:46 [INFO]: User logged in: abhishek@example.com
+2025-02-27 19:37:46 [INFO]: [0mPOST /api/auth/login [32m200[0m 162.633 ms - 294[0m
+2025-02-27 19:44:17 [INFO]: [0mPOST /api/appointments [32m201[0m 90.238 ms - 260[0m
+2025-02-27 19:44:34 [INFO]: User logged in: preeti@example.com
+2025-02-27 19:44:34 [INFO]: [0mPOST /api/auth/login [32m200[0m 171.802 ms - 287[0m
+2025-02-27 19:45:49 [INFO]: [0mPOST /api/prescriptions [32m201[0m 218.464 ms - 263[0m
+2025-02-27 19:46:48 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:46:48 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:46:48 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:46:48 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:46:48 [INFO]: [0mPUT /api/prescriptions/11 [33m400[0m 86.587 ms - 114[0m
+2025-02-27 19:48:04 [INFO]: Updated prescription - ID: 10
+2025-02-27 19:48:04 [INFO]: [0mPUT /api/prescriptions/10 [32m200[0m 201.061 ms - 436[0m

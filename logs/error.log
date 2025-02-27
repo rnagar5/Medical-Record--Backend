@@ -169,3 +169,23 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: User is not defined (Status: 400)
 2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not defined (Status: 500)
 2025-02-27 18:55:41 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not defined
+2025-02-27 19:07:33 [ERROR]: AppError - Invalid credentials (Status: 401)
+2025-02-27 19:07:33 [ERROR]: Login failed - Invalid credentials
+2025-02-27 19:07:33 [ERROR]: AppError - Invalid credentials (Status: 400)
+2025-02-27 19:07:33 [ERROR]: POST /api/auth/login - Invalid credentials
+2025-02-27 19:14:04 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:14:04 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:14:04 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:14:04 [ERROR]: PUT /api/prescriptions/12 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:16:34 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:16:34 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:16:34 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:16:34 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:18:19 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:18:19 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:18:19 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:18:19 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:46:48 [ERROR]: AppError - Prescription not found (Status: 404)
+2025-02-27 19:46:48 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 19:46:48 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
+2025-02-27 19:46:48 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
