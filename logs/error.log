@@ -189,3 +189,8 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 19:46:48 [ERROR]: Error updating prescription - Transaction cannot be rolled back because it has been finished with state: rollback
 2025-02-27 19:46:48 [ERROR]: AppError - Transaction cannot be rolled back because it has been finished with state: rollback (Status: 400)
 2025-02-27 19:46:48 [ERROR]: PUT /api/prescriptions/11 - Transaction cannot be rolled back because it has been finished with state: rollback
+2025-02-27 21:51:10 [ERROR]: AppError - User not found (Status: 404)
+2025-02-27 21:51:10 [ERROR]: AppError - Failed to update user: User not found (Status: 500)
+2025-02-27 21:51:10 [ERROR]: Error updating user - Failed to update user: User not found | Requested by admin (ID: 16)
+2025-02-27 21:51:10 [ERROR]: AppError - Failed to update user: User not found (Status: 500)
+2025-02-27 21:51:10 [ERROR]: PUT /api/users/26 - Failed to update user: User not found

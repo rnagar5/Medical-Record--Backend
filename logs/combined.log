@@ -646,3 +646,41 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 19:46:48 [INFO]: [0mPUT /api/prescriptions/11 [33m400[0m 86.587 ms - 114[0m
 2025-02-27 19:48:04 [INFO]: Updated prescription - ID: 10
 2025-02-27 19:48:04 [INFO]: [0mPUT /api/prescriptions/10 [32m200[0m 201.061 ms - 436[0m
+2025-02-27 21:50:24 [INFO]: User logged in: akshat@example.com
+2025-02-27 21:50:24 [INFO]: [0mPOST /api/auth/login [32m200[0m 532.309 ms - 293[0m
+2025-02-27 21:50:38 [INFO]: Fetched users with limit=10 and offset=0
+2025-02-27 21:50:38 [INFO]: [0mGET /api/users [32m200[0m 112.400 ms - 1551[0m
+2025-02-27 21:50:51 [INFO]: [0mGET /api/users/36 [32m200[0m 97.714 ms - 151[0m
+2025-02-27 21:51:10 [ERROR]: AppError - User not found (Status: 404)
+2025-02-27 21:51:10 [ERROR]: AppError - Failed to update user: User not found (Status: 500)
+2025-02-27 21:51:10 [ERROR]: Error updating user - Failed to update user: User not found | Requested by admin (ID: 16)
+2025-02-27 21:51:10 [ERROR]: AppError - Failed to update user: User not found (Status: 500)
+2025-02-27 21:51:10 [ERROR]: PUT /api/users/26 - Failed to update user: User not found
+2025-02-27 21:51:10 [INFO]: [0mPUT /api/users/26 [31m500[0m 123.836 ms - 68[0m
+2025-02-27 21:53:56 [INFO]: Updated user - ID: 27 by admin (ID: 16)
+2025-02-27 21:53:56 [INFO]: [0mPUT /api/users/27 [32m200[0m 143.090 ms - 269[0m
+2025-02-27 21:54:24 [INFO]: User signed up: ridzi@example.com
+2025-02-27 21:54:24 [INFO]: [0mPOST /api/auth/signup [32m201[0m 395.106 ms - 93[0m
+2025-02-27 21:54:37 [INFO]: User logged in: ridzi@example.com
+2025-02-27 21:54:37 [INFO]: [0mPOST /api/auth/login [32m200[0m 351.513 ms - 287[0m
+2025-02-27 21:55:04 [INFO]: [0mPOST /api/appointments [32m201[0m 109.996 ms - 260[0m
+2025-02-27 21:55:22 [INFO]: User logged in: preeti@example.com
+2025-02-27 21:55:22 [INFO]: [0mPOST /api/auth/login [32m200[0m 353.808 ms - 287[0m
+2025-02-27 21:55:54 [INFO]: [0mPOST /api/prescriptions [32m201[0m 125.497 ms - 263[0m
+2025-02-27 21:56:07 [INFO]: User logged in: akshat@example.com
+2025-02-27 21:56:07 [INFO]: [0mPOST /api/auth/login [32m200[0m 351.306 ms - 293[0m
+2025-02-27 21:56:30 [INFO]: Fetched all prescriptions
+2025-02-27 21:56:30 [INFO]: [0mGET /api/prescriptions [32m200[0m 127.668 ms - 2253[0m
+2025-02-27 21:56:41 [INFO]: Fetched prescription with ID 1
+2025-02-27 21:56:41 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 139.112 ms - 450[0m
+2025-02-27 21:56:51 [INFO]: [0mGET /api/appointments [32m200[0m 29.679 ms - 3818[0m
+2025-02-27 21:57:00 [INFO]: [0mGET /api/appointments/12 [32m200[0m 19.552 ms - 508[0m
+2025-02-27 21:57:20 [INFO]: User logged in: ridzi@example.com
+2025-02-27 21:57:20 [INFO]: [0mPOST /api/auth/login [32m200[0m 333.010 ms - 287[0m
+2025-02-27 21:57:48 [INFO]: [0mPUT /api/appointments/16 [32m200[0m 123.189 ms - 275[0m
+2025-02-27 21:57:59 [INFO]: User logged in: preeti@example.com
+2025-02-27 21:57:59 [INFO]: [0mPOST /api/auth/login [32m200[0m 473.187 ms - 287[0m
+2025-02-27 21:58:23 [INFO]: Updated prescription - ID: 11
+2025-02-27 21:58:23 [INFO]: [0mPUT /api/prescriptions/11 [32m200[0m 107.613 ms - 451[0m
+2025-02-27 22:00:03 [INFO]: Updated prescription - ID: 11
+2025-02-27 22:00:03 [INFO]: [0mPUT /api/prescriptions/11 [32m200[0m 109.029 ms - 451[0m
