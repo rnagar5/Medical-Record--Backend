@@ -2,8 +2,12 @@
   "name": "medical-record-system",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --exec babel-node server.js",
+    "build": "babel . --ignore node_modules --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,6 +27,10 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.9",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.9",
     "nodemon": "^3.1.9",
     "sequelize-cli": "^6.6.2"
   }

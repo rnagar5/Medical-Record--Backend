@@ -1,45 +1,51 @@
 'use strict';
-const { DataTypes } = require('sequelize');
 
-module.exports = (sequelize) => {
+const {
+  DataTypes
+} = require('sequelize');
+module.exports = sequelize => {
   const Prescription = sequelize.define('Prescription', {
     appointmentId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'Appointments',
-        key: 'id',
+        key: 'id'
       },
       onUpdate: 'CASCADE',
-      onDelete: 'CASCADE',
+      onDelete: 'CASCADE'
     },
-    patientId: {  
+    patientId: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'Users',
-        key: 'id',
+        key: 'id'
       },
       onUpdate: 'CASCADE',
-      onDelete: 'CASCADE',
+      onDelete: 'CASCADE'
     },
     medication: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     dosage: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     instructions: {
-      type: DataTypes.STRING,
-    },
+      type: DataTypes.STRING
+    }
   });
-
-  Prescription.associate = (models) => {
-    Prescription.belongsTo(models.Appointment, { foreignKey: 'appointmentId', as: 'appointment' });
-    Prescription.belongsTo(models.User, { foreignKey: 'patientId', as: 'patient' }); 
+  Prescription.associate = models => {
+    Prescription.belongsTo(models.Appointment, {
+      foreignKey: 'appointmentId',
+      as: 'appointment'
+    });
+    Prescription.belongsTo(models.User, {
+      foreignKey: 'patientId',
+      as: 'patient'
+    });
   };
-
   return Prescription;
 };

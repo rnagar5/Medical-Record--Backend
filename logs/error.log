@@ -135,3 +135,37 @@ notNull Violation: Appointment.time cannot be null
 2025-02-24 09:39:42 [ERROR]: AppError - Failed to delete user (Status: 400)
 2025-02-24 09:39:42 [ERROR]: DELETE /api/users/4 - Failed to delete user
 2025-02-24 15:55:14 [ERROR]: POST /api/appointments - sequelize is not defined
+2025-02-27 16:25:40 [ERROR]: Signup failed - secretOrPrivateKey must have a value
+2025-02-27 16:25:40 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-27 16:25:40 [ERROR]: POST /api/auth/signup - secretOrPrivateKey must have a value
+2025-02-27 16:26:45 [ERROR]: Login failed - secretOrPrivateKey must have a value
+2025-02-27 16:26:45 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-27 16:26:45 [ERROR]: POST /api/auth/login - secretOrPrivateKey must have a value
+2025-02-27 16:29:33 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 16:29:33 [ERROR]: Signup failed - Email already registered
+2025-02-27 16:29:33 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 16:29:33 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-27 16:43:31 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:43:31 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:43:31 [ERROR]: GET /api/appointments?limit=2 - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:48:58 [ERROR]: Error fetching prescriptions - Failed to fetch prescriptions: User is not associated to Prescription!
+2025-02-27 16:48:58 [ERROR]: AppError - Failed to fetch prescriptions (Status: 500)
+2025-02-27 16:48:58 [ERROR]: GET /api/prescriptions - Failed to fetch prescriptions
+2025-02-27 16:49:15 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:49:15 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:49:15 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:58:56 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:58:56 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:58:56 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:59:05 [ERROR]: Error fetching prescriptions - Failed to fetch prescriptions: User is not associated to Prescription!
+2025-02-27 16:59:05 [ERROR]: AppError - Failed to fetch prescriptions (Status: 500)
+2025-02-27 16:59:05 [ERROR]: GET /api/prescriptions - Failed to fetch prescriptions
+2025-02-27 18:36:01 [ERROR]: Signup failed - User is not defined
+2025-02-27 18:36:01 [ERROR]: AppError - User is not defined (Status: 400)
+2025-02-27 18:36:01 [ERROR]: POST /api/auth/signup - User is not defined
+2025-02-27 18:37:02 [ERROR]: Signup failed - User is not defined
+2025-02-27 18:37:02 [ERROR]: AppError - User is not defined (Status: 400)
+2025-02-27 18:37:02 [ERROR]: POST /api/auth/signup - User is not defined
+2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: User is not defined (Status: 400)
+2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not defined (Status: 500)
+2025-02-27 18:55:41 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not defined

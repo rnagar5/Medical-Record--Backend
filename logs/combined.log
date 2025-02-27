@@ -480,3 +480,111 @@ notNull Violation: Appointment.time cannot be null
 2025-02-25 16:43:45 [INFO]: User logged in: shreya@example.com
 2025-02-25 16:43:45 [INFO]: [0mPOST /api/auth/login [32m200[0m 140.557 ms - 295[0m
 2025-02-25 16:44:10 [INFO]: [0mPOST /api/prescriptions [32m201[0m 64.442 ms - 265[0m
+2025-02-27 16:25:40 [ERROR]: Signup failed - secretOrPrivateKey must have a value
+2025-02-27 16:25:40 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-27 16:25:40 [ERROR]: POST /api/auth/signup - secretOrPrivateKey must have a value
+2025-02-27 16:25:40 [INFO]: [0mPOST /api/auth/signup [33m400[0m 342.187 ms - 67[0m
+2025-02-27 16:26:45 [ERROR]: Login failed - secretOrPrivateKey must have a value
+2025-02-27 16:26:45 [ERROR]: AppError - secretOrPrivateKey must have a value (Status: 400)
+2025-02-27 16:26:45 [ERROR]: POST /api/auth/login - secretOrPrivateKey must have a value
+2025-02-27 16:26:45 [INFO]: [0mPOST /api/auth/login [33m400[0m 242.563 ms - 67[0m
+2025-02-27 16:29:28 [INFO]: User logged in: shreya@example.com
+2025-02-27 16:29:28 [INFO]: [0mPOST /api/auth/login [32m200[0m 197.585 ms - 295[0m
+2025-02-27 16:29:33 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 16:29:33 [ERROR]: Signup failed - Email already registered
+2025-02-27 16:29:33 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 16:29:33 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-27 16:29:33 [INFO]: [0mPOST /api/auth/signup [33m400[0m 8.001 ms - 55[0m
+2025-02-27 16:30:05 [INFO]: User signed up: vim@example.com
+2025-02-27 16:30:05 [INFO]: [0mPOST /api/auth/signup [32m201[0m 216.256 ms - 286[0m
+2025-02-27 16:31:05 [INFO]: User logged in: vim@example.com
+2025-02-27 16:31:05 [INFO]: [0mPOST /api/auth/login [32m200[0m 227.034 ms - 285[0m
+2025-02-27 16:31:26 [INFO]: [0mPOST /api/appointments [33m401[0m 3.285 ms - 38[0m
+2025-02-27 16:32:00 [INFO]: [0mPOST /api/appointments [33m401[0m 0.572 ms - 38[0m
+2025-02-27 16:32:29 [INFO]: User logged in: vim@example.com
+2025-02-27 16:32:29 [INFO]: [0mPOST /api/auth/login [32m200[0m 216.025 ms - 285[0m
+2025-02-27 16:33:27 [INFO]: [0mPOST /api/appointments [33m401[0m 1.313 ms - 38[0m
+2025-02-27 16:34:25 [INFO]: User signed up: namansharma@example.com
+2025-02-27 16:34:25 [INFO]: [0mPOST /api/auth/signup [32m201[0m 238.669 ms - 99[0m
+2025-02-27 16:34:37 [INFO]: User logged in: namansharma@example.com
+2025-02-27 16:34:37 [INFO]: [0mPOST /api/auth/login [32m200[0m 200.806 ms - 300[0m
+2025-02-27 16:35:03 [INFO]: [0mPOST /api/appointments [33m401[0m 0.951 ms - 38[0m
+2025-02-27 16:35:07 [INFO]: [0mPOST /api/appointments [33m401[0m 0.735 ms - 38[0m
+2025-02-27 16:36:51 [INFO]: User logged in: namansharma@example.com
+2025-02-27 16:36:51 [INFO]: [0mPOST /api/auth/login [32m200[0m 185.526 ms - 300[0m
+2025-02-27 16:37:27 [INFO]: [0mPOST /api/appointments [33m401[0m 2.223 ms - 38[0m
+2025-02-27 16:38:41 [INFO]: [0mPOST /api/appointments [33m401[0m 5.964 ms - 38[0m
+2025-02-27 16:40:48 [INFO]: [0mPOST /api/appointments [33m401[0m 8.512 ms - 38[0m
+2025-02-27 16:42:42 [INFO]: User logged in: namansharma@example.com
+2025-02-27 16:42:42 [INFO]: [0mPOST /api/auth/login [32m200[0m 133.164 ms - 300[0m
+2025-02-27 16:42:59 [INFO]: [0mPOST /api/appointments [32m201[0m 237.832 ms - 260[0m
+2025-02-27 16:43:17 [INFO]: User logged in: akshat@example.com
+2025-02-27 16:43:17 [INFO]: [0mPOST /api/auth/login [32m200[0m 207.158 ms - 293[0m
+2025-02-27 16:43:31 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:43:31 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:43:31 [ERROR]: GET /api/appointments?limit=2 - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:43:31 [INFO]: [0mGET /api/appointments?limit=2 [31m500[0m 12.480 ms - 129[0m
+2025-02-27 16:46:02 [INFO]: User signed up: divisharma@example.com
+2025-02-27 16:46:02 [INFO]: [0mPOST /api/auth/signup [32m201[0m 211.898 ms - 97[0m
+2025-02-27 16:46:20 [INFO]: User logged in: divisharma@example.com
+2025-02-27 16:46:20 [INFO]: [0mPOST /api/auth/login [32m200[0m 312.705 ms - 295[0m
+2025-02-27 16:47:17 [INFO]: User logged in: shreya@example.com
+2025-02-27 16:47:17 [INFO]: [0mPOST /api/auth/login [32m200[0m 226.522 ms - 295[0m
+2025-02-27 16:47:59 [INFO]: [0mPOST /api/prescriptions [32m201[0m 111.638 ms - 265[0m
+2025-02-27 16:48:41 [INFO]: User logged in: akshat@example.com
+2025-02-27 16:48:41 [INFO]: [0mPOST /api/auth/login [32m200[0m 177.032 ms - 293[0m
+2025-02-27 16:48:58 [ERROR]: Error fetching prescriptions - Failed to fetch prescriptions: User is not associated to Prescription!
+2025-02-27 16:48:58 [ERROR]: AppError - Failed to fetch prescriptions (Status: 500)
+2025-02-27 16:48:58 [ERROR]: GET /api/prescriptions - Failed to fetch prescriptions
+2025-02-27 16:48:58 [INFO]: [0mGET /api/prescriptions [31m500[0m 5.684 ms - 60[0m
+2025-02-27 16:49:15 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:49:15 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:49:15 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:49:15 [INFO]: [0mGET /api/appointments [31m500[0m 7.691 ms - 129[0m
+2025-02-27 16:58:42 [INFO]: User logged in: akshat@example.com
+2025-02-27 16:58:42 [INFO]: [0mPOST /api/auth/login [32m200[0m 461.013 ms - 293[0m
+2025-02-27 16:58:56 [ERROR]: AppError - Failed to fetch appointments: User is not associated to Appointment! (Status: 400)
+2025-02-27 16:58:56 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment! (Status: 500)
+2025-02-27 16:58:56 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not associated to Appointment!
+2025-02-27 16:58:56 [INFO]: [0mGET /api/appointments [31m500[0m 23.347 ms - 129[0m
+2025-02-27 16:59:05 [ERROR]: Error fetching prescriptions - Failed to fetch prescriptions: User is not associated to Prescription!
+2025-02-27 16:59:05 [ERROR]: AppError - Failed to fetch prescriptions (Status: 500)
+2025-02-27 16:59:05 [ERROR]: GET /api/prescriptions - Failed to fetch prescriptions
+2025-02-27 16:59:05 [INFO]: [0mGET /api/prescriptions [31m500[0m 13.350 ms - 60[0m
+2025-02-27 18:36:01 [ERROR]: Signup failed - User is not defined
+2025-02-27 18:36:01 [ERROR]: AppError - User is not defined (Status: 400)
+2025-02-27 18:36:01 [ERROR]: POST /api/auth/signup - User is not defined
+2025-02-27 18:36:01 [INFO]: [0mPOST /api/auth/signup [33m400[0m 390.103 ms - 50[0m
+2025-02-27 18:37:02 [ERROR]: Signup failed - User is not defined
+2025-02-27 18:37:02 [ERROR]: AppError - User is not defined (Status: 400)
+2025-02-27 18:37:02 [ERROR]: POST /api/auth/signup - User is not defined
+2025-02-27 18:37:02 [INFO]: [0mPOST /api/auth/signup [33m400[0m 280.513 ms - 50[0m
+2025-02-27 18:38:40 [INFO]: User signed up: pratham@example.com
+2025-02-27 18:38:40 [INFO]: [0mPOST /api/auth/signup [32m201[0m 160.217 ms - 95[0m
+2025-02-27 18:38:52 [INFO]: User logged in: pratham@example.com
+2025-02-27 18:38:52 [INFO]: [0mPOST /api/auth/login [32m200[0m 332.595 ms - 296[0m
+2025-02-27 18:39:15 [INFO]: [0mPOST /api/appointments [33m401[0m 3.402 ms - 38[0m
+2025-02-27 18:39:56 [INFO]: [0mPOST /api/appointments [33m401[0m 4.137 ms - 38[0m
+2025-02-27 18:41:53 [INFO]: [0mPOST /api/appointments [33m401[0m 2.819 ms - 38[0m
+2025-02-27 18:43:40 [INFO]: [0mPOST /api/appointments [33m401[0m 8.027 ms - 38[0m
+2025-02-27 18:44:12 [INFO]: [0mPOST /api/appointments [33m401[0m 2.405 ms - 38[0m
+2025-02-27 18:45:32 [INFO]: User logged in: pratham@example.com
+2025-02-27 18:45:32 [INFO]: [0mPOST /api/auth/login [32m200[0m 186.824 ms - 296[0m
+2025-02-27 18:45:55 [INFO]: [0mPOST /api/appointments [33m401[0m 3.002 ms - 38[0m
+2025-02-27 18:49:17 [INFO]: User signed up: suhani@example.com
+2025-02-27 18:49:17 [INFO]: [0mPOST /api/auth/signup [32m201[0m 363.060 ms - 94[0m
+2025-02-27 18:49:27 [INFO]: User logged in: suhani@example.com
+2025-02-27 18:49:27 [INFO]: [0mPOST /api/auth/login [32m200[0m 164.180 ms - 289[0m
+2025-02-27 18:49:57 [INFO]: [0mPOST /api/appointments [33m401[0m 3.841 ms - 38[0m
+2025-02-27 18:51:47 [INFO]: [0mPOST /api/appointments [33m401[0m 9.375 ms - 38[0m
+2025-02-27 18:51:56 [INFO]: User logged in: suhani@example.com
+2025-02-27 18:51:56 [INFO]: [0mPOST /api/auth/login [32m200[0m 374.351 ms - 289[0m
+2025-02-27 18:52:14 [INFO]: [0mPOST /api/appointments [33m401[0m 4.161 ms - 38[0m
+2025-02-27 18:53:59 [INFO]: [0mPOST /api/appointments [33m401[0m 6.213 ms - 38[0m
+2025-02-27 18:55:12 [INFO]: [0mPOST /api/appointments [32m201[0m 56.374 ms - 260[0m
+2025-02-27 18:55:23 [INFO]: User logged in: akshat@example.com
+2025-02-27 18:55:23 [INFO]: [0mPOST /api/auth/login [32m200[0m 365.506 ms - 293[0m
+2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: User is not defined (Status: 400)
+2025-02-27 18:55:41 [ERROR]: AppError - Failed to fetch appointments: Failed to fetch appointments: User is not defined (Status: 500)
+2025-02-27 18:55:41 [ERROR]: GET /api/appointments - Failed to fetch appointments: Failed to fetch appointments: User is not defined
+2025-02-27 18:55:41 [INFO]: [0mGET /api/appointments [31m500[0m 15.660 ms - 110[0m
