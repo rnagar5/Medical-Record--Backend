@@ -1,0 +1,39 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: riddhi2808
+      POSTGRES_DB: medicalrecords
+    ports:
+    - "5433:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: express_backend
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+     PORT: 5000
+     JWT_SECRET: 04b0061446b9bee1775a55d7f04a714e33f9e423d10573cd861860a0d01fc367
+     JWT_EXPIRES_IN: 15d
+     DB_USERNAME: postgres
+     DB_PASSWORD: riddhi2808
+     DB_NAME: medicalrecords
+     DB_HOST: postgres
+     DB_PORT: 5432
+     DB_DIALECT: postgres
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["npm", "start"] # Modify if needed
+
+volumes:
+  pg_data:

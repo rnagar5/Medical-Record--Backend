@@ -684,3 +684,52 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 21:58:23 [INFO]: [0mPUT /api/prescriptions/11 [32m200[0m 107.613 ms - 451[0m
 2025-02-27 22:00:03 [INFO]: Updated prescription - ID: 11
 2025-02-27 22:00:03 [INFO]: [0mPUT /api/prescriptions/11 [32m200[0m 109.029 ms - 451[0m
+2025-02-27 22:01:06 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 22:01:06 [ERROR]: Signup failed - Email already registered
+2025-02-27 22:01:06 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 22:01:06 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-27 22:01:06 [INFO]: [0mPOST /api/auth/signup [33m400[0m 53.568 ms - 55[0m
+2025-02-27 22:01:13 [INFO]: User signed up: sidzi@example.com
+2025-02-27 22:01:13 [INFO]: [0mPOST /api/auth/signup [32m201[0m 348.810 ms - 93[0m
+2025-02-27 22:01:23 [INFO]: User logged in: sidzi@example.com
+2025-02-27 22:01:23 [INFO]: [0mPOST /api/auth/login [32m200[0m 265.058 ms - 287[0m
+2025-02-27 22:01:46 [INFO]: [0mPOST /api/appointments [32m201[0m 133.335 ms - 260[0m
+2025-02-27 22:02:05 [INFO]: User logged in: preeti@example.com
+2025-02-27 22:02:05 [INFO]: [0mPOST /api/auth/login [32m200[0m 366.655 ms - 287[0m
+2025-02-27 22:02:35 [INFO]: [0mPOST /api/prescriptions [32m201[0m 397.604 ms - 263[0m
+2025-02-27 22:02:50 [INFO]: User logged in: akshat@example.com
+2025-02-27 22:02:50 [INFO]: [0mPOST /api/auth/login [32m200[0m 363.841 ms - 293[0m
+2025-02-27 22:03:06 [INFO]: Fetched all prescriptions
+2025-02-27 22:03:06 [INFO]: [0mGET /api/prescriptions [32m200[0m 121.408 ms - 2513[0m
+2025-02-27 22:03:15 [INFO]: Fetched prescription with ID 1
+2025-02-27 22:03:15 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 25.717 ms - 450[0m
+2025-02-27 22:03:25 [INFO]: [0mGET /api/appointments [32m200[0m 26.797 ms - 3818[0m
+2025-02-27 22:03:35 [INFO]: [0mGET /api/appointments/12 [32m200[0m 22.059 ms - 508[0m
+2025-02-27 22:03:46 [INFO]: Fetched users with limit=10 and offset=0
+2025-02-27 22:03:46 [INFO]: [0mGET /api/users [32m200[0m 202.688 ms - 1551[0m
+2025-02-27 22:04:04 [INFO]: [0mGET /api/users/36 [32m200[0m 109.789 ms - 151[0m
+2025-02-27 22:42:52 [INFO]: Fetched users with limit=10 and offset=0
+2025-02-27 22:42:52 [INFO]: [0mGET /api/users [32m200[0m 39.588 ms - 1551[0m
+2025-02-27 22:42:56 [INFO]: [0mGET /api/users/36 [32m200[0m 13.381 ms - 151[0m
+2025-02-27 22:43:09 [INFO]: User logged in: sidzi@example.com
+2025-02-27 22:43:09 [INFO]: [0mPOST /api/auth/login [32m200[0m 368.767 ms - 287[0m
+2025-02-27 22:45:40 [INFO]: User logged in: ridzi@example.com
+2025-02-27 22:45:40 [INFO]: [0mPOST /api/auth/login [32m200[0m 193.007 ms - 287[0m
+2025-02-27 22:45:48 [INFO]: Fetched all prescriptions
+2025-02-27 22:45:48 [INFO]: [0mGET /api/prescriptions [32m200[0m 40.939 ms - 2513[0m
+2025-02-27 22:45:54 [INFO]: [0mPOST /api/prescriptions [32m201[0m 48.843 ms - 263[0m
+2025-02-27 22:46:00 [INFO]: Fetched prescription with ID 1
+2025-02-27 22:46:00 [INFO]: [0mGET /api/prescriptions/1 [32m200[0m 13.198 ms - 450[0m
+2025-02-27 22:46:09 [INFO]: [0mPOST /api/appointments [32m201[0m 19.255 ms - 260[0m
+2025-02-27 22:46:15 [INFO]: [0mGET /api/appointments [32m200[0m 17.407 ms - 3818[0m
+2025-02-28 10:26:56 [ERROR]: AppError - User not found (Status: 404)
+2025-02-28 10:26:56 [ERROR]: Login failed - User not found
+2025-02-28 10:26:56 [ERROR]: AppError - User not found (Status: 400)
+2025-02-28 10:26:56 [ERROR]: POST /api/auth/login - User not found
+2025-02-28 10:26:56 [INFO]: [0mPOST /api/auth/login [33m400[0m 492.267 ms - 45[0m
+2025-02-28 10:27:33 [INFO]: User signed up: siddhi@example.com
+2025-02-28 10:27:33 [INFO]: [0mPOST /api/auth/signup [32m201[0m 550.716 ms - 91[0m
+2025-02-28 10:27:43 [INFO]: User logged in: siddhi@example.com
+2025-02-28 10:27:43 [INFO]: [0mPOST /api/auth/login [32m200[0m 197.999 ms - 282[0m
+2025-02-28 10:28:03 [INFO]: Fetched users with limit=10 and offset=0
+2025-02-28 10:28:03 [INFO]: [0mGET /api/users [32m200[0m 75.983 ms - 302[0m

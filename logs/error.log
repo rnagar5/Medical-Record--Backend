@@ -194,3 +194,11 @@ notNull Violation: Appointment.time cannot be null
 2025-02-27 21:51:10 [ERROR]: Error updating user - Failed to update user: User not found | Requested by admin (ID: 16)
 2025-02-27 21:51:10 [ERROR]: AppError - Failed to update user: User not found (Status: 500)
 2025-02-27 21:51:10 [ERROR]: PUT /api/users/26 - Failed to update user: User not found
+2025-02-27 22:01:06 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 22:01:06 [ERROR]: Signup failed - Email already registered
+2025-02-27 22:01:06 [ERROR]: AppError - Email already registered (Status: 400)
+2025-02-27 22:01:06 [ERROR]: POST /api/auth/signup - Email already registered
+2025-02-28 10:26:56 [ERROR]: AppError - User not found (Status: 404)
+2025-02-28 10:26:56 [ERROR]: Login failed - User not found
+2025-02-28 10:26:56 [ERROR]: AppError - User not found (Status: 400)
+2025-02-28 10:26:56 [ERROR]: POST /api/auth/login - User not found
